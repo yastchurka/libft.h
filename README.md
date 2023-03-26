@@ -2,19 +2,21 @@
 * [Introduction](#introduction)
 * [Function Overview](#function-overview)
 * [Bonus](#bonus)
-* [Additional Functions](#additional-functions)
-* [Installation](#installation)
-* [Summary](#summary)
 
 ## Introduction
-In this project we'll be implementing our home-made functions from libc, which will be very useful to get familiar with memory allocation, and to think of creative ways to code these functions.
+* Declaring global variables is forbidden.
+* If you need helper functions to split a more complex function, define them as static functions. This way, their scope will be limited to the appropriate file.
+* Turning in unused files is forbidden.
+* Every .c files must compile with the flags -Wall -Wextra -Werror.
+* You must use the command ar to create your library. Using the libtool command
+is forbidden.
 
 ## Function Overview
 
 | Function | Description |
 | :------: | :---------: |
 | ``ft_atoi`` | Reads a String, and, after ignoring spaces with ``ft_isspace``, saves the string into an integer |
-| ``ft_bzero`` | Writes ``n`` zeroes to the string ``s`` |
+| ``ft_bzero`` | Writes ``n`` zeroes to the string ``s`` |
 | ``ft_calloc`` | Reserves ``x`` blocks of ``y`` bits of memory |
 | ``ft_isalnum`` | Returns ``1`` if the input is a number or a letter in the ``ASCII`` table |
 | ``ft_isalpha`` | Returns ``1`` if the input is a letter in the ``ASCII`` table |
@@ -29,14 +31,14 @@ In this project we'll be implementing our home-made functions from libc, which w
 | ``ft_memmove`` | Copies from one part of memory to another, preventing possible overlaps |
 | ``ft_memset`` | Assigns a character ``n`` times to a part of the memory |
 | ``ft_putchar_fd`` | Prints a character to the given file descriptor |
-| ``ft_putendl_fd`` | Prints a string followed by a new line ``\n`` to a given file descriptor |
+| ``ft_putendl_fd`` | Prints a string followed by a new line ``\n`` to a given file descriptor |
 | ``ft_putnbr_fd`` | Prints number to the given file descriptor |
 | ``ft_putstr_fd`` | Prints string to the given file descriptor |
 | ``ft_split`` | Splits a string according to a given separator character |
-| ``ft_strchr`` | Looks for a specific character inside a given string |
+| ``ft_strchr`` | Looks for a specific character inside a given string |
 | ``ft_strdup`` | Saves enoug space and duplicates a string |
-| ``ft_strjoin`` | Concatenates two strings allocating enough space first |
-| ``ft_strlcat`` | Concatenates two strings ensuring it ends with ``\0`` |
+| ``ft_strjoin`` | Concatenates two strings allocating enough space first |
+| ``ft_strlcat`` | Concatenates two strings ensuring it ends with ``\0`` |
 | ``ft_strlcpy`` | Copies ``n - 1`` bytes from a source string to a destination string |
 | ``ft_strlen`` | Returns length of a string |
 | ``ft_strmapi`` | Applies a function (mapping) to every element in a string |
@@ -45,8 +47,8 @@ In this project we'll be implementing our home-made functions from libc, which w
 | ``ft_strrchr`` | Looks for a given character in a string, reading it from back to front |
 | ``ft_strtrim`` | Removes occurrences of characters in a string from the start and end of another one |
 | ``ft_substr`` | Copies from the n-th char of a string |
-| ``ft_tolower`` | Makes every uppercase character in a string lowercase |
-| ``ft_toupper`` | Makes every lowercase character in a string uppercase |
+| ``ft_tolower`` | Makes every uppercase character in a string lowercase |
+| ``ft_toupper`` | Makes every lowercase character in a string uppercase |
 
 ## Bonus
 For this part we implemented a struct defining the well-known linked lists
